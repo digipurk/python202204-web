@@ -27,7 +27,6 @@ def dynaamiline2():
 def juhuslik():
     juhuslik_arv = randint(1, 10000)
     return render_template('index.html', arv = juhuslik_arv)
-    pass
 
 if __name__ == '__main__':
     app.run(debug = True)
