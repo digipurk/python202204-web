@@ -9,6 +9,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/test')
+def test():
+    return 'Test'
+
 @app.route('/dices')
 def dices():
     dice_count = request.args.get('dice_count', default = 1, type = int)
